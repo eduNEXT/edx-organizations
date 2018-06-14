@@ -7,6 +7,6 @@ from rest_framework import routers
 from organizations.v0.views import OrganizationsViewSet
 
 router = routers.SimpleRouter()
-router.register(r'organizations', OrganizationsViewSet)
+router.register(r'organizations', OrganizationsViewSet, base_name='organizations')
 
 urlpatterns = router.urls
